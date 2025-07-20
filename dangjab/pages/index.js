@@ -1,12 +1,3 @@
-// export default function Home() {
-//   return (
-//     <div style={{ padding: '20px' }}>
-//       <h1>Test Page Works!</h1>
-//       <p>If you see this, routing is fine.</p>
-//     </div>
-//   )
-// }
-
 'use client'
 
 import React, { useState, useRef, Suspense } from 'react'
