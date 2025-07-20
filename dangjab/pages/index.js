@@ -159,7 +159,7 @@ export default function TShirtCustomizer() {
                   transition={{ type: 'spring', damping: 5, stiffness: 40, restDelta: 0.001, duration: 0.3 }}
                 >
                   <h1 className="text-4xl md:text-6xl font-black text-gray-800 mb-6 drop-shadow-lg">
-                    커스텀 티셔츠 만들기
+                    커스텀 티셔츠 만들기!
                   </h1>
                 </motion.div>
                 
