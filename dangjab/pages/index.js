@@ -152,7 +152,6 @@ export default function TShirtCustomizer() {
             transition={transition}
             className="text-pink-500"
           >
-            <Sparkles size={48} />
           </motion.div>
         </motion.header>
 
