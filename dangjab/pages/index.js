@@ -134,7 +134,7 @@ export default function TShirtCustomizer() {
           transition={transition}
           className="absolute top-0 left-0 right-0 flex items-center justify-between p-4 md:p-6 z-50 pointer-events-auto"
         >
-          <div className="flex items-center space-x-2 w-[10em]">
+          <div className="flex items-center space-x-2 w-[10em] hidden sm:block">
             <img src="logo.png" alt="Logo" />
           </div>
           
@@ -151,16 +151,9 @@ export default function TShirtCustomizer() {
           {state.intro ? (
             <motion.section key="main" {...config} className="absolute inset-0 flex items-center justify-center p-6 z-40 pointer-events-auto">
               <div className="max-w-2xl text-center">
-                <motion.div
-                  key="title"
-                  initial={{ x: 100, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ type: 'spring', damping: 5, stiffness: 40, restDelta: 0.001, duration: 0.3 }}
-                >
                   <h1 className="text-4xl md:text-6xl font-black text-gray-800 mb-6 drop-shadow-lg">
-                    커스텀 티셔츠 만들기!
+                    커스텀 티셔츠 만들기
                   </h1>
-                </motion.div>
                 
                 <motion.div
                   key="content"
@@ -326,7 +319,7 @@ function MobileCustomizer({ state, setState, fileInputRef, handleImageUpload, ha
   return (
     <div className="w-full h-full relative pointer-events-none">
       {/* Status indicator at top */}
-      <div className="absolute top-20 left-4 right-4 z-50 pointer-events-auto">
+      <div className="absolute top-[4%] right-4 left-4 z-50 pointer-events-auto">
         <div className="bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg border border-gray-200 text-center">
           <div className="text-sm text-gray-600">
             <p className="block sm:hidden">📱 <strong>터치해서</strong> 티셔츠를 회전해보세요.</p>
@@ -338,10 +331,10 @@ function MobileCustomizer({ state, setState, fileInputRef, handleImageUpload, ha
       {/* Bottom Drawer */}
       <motion.div
         initial={{ y: "85%" }}
-        animate={{ y: drawerOpen ? "25%" : "85%" }}
+        animate={{ y: drawerOpen ? "13%" : "85%" }}
         transition={{ type: "spring", damping: 30, stiffness: 300 }}
         className="absolute bottom-0 left-0 right-0 bg-white rounded-t-3xl shadow-2xl pointer-events-auto flex flex-col"
-        style={{ height: "90vh" }}
+        style={{ height: "100dvh" }}
       >
         {/* Drawer Handle */}
         <div 
