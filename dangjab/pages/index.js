@@ -151,7 +151,7 @@ export default function TShirtCustomizer() {
           {state.intro ? (
             <motion.section key="main" {...config} className="absolute inset-0 flex items-center justify-center p-6 z-40 pointer-events-auto">
               <div className="max-w-2xl text-center">
-                  <h1 style={{ fontSize: '2rem', fontWeight: '900', color: '#1f2937', marginBottom: '1.5rem' }}>
+                  <h1>
                     커스텀 티셔츠 만들기!
                   </h1>
                 
